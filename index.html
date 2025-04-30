@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>24×7.LIVE</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>📰 24×7.<span class="highlight">LIVE</span></h1>
+    <p class="tagline">Stay updated anytime, anywhere</p>
+    <p id="live-date-time" class="live-time">🗓️ Loading current time...</p>
+  </header>
+
+  <div class="category-buttons">
+    <button onclick="fetchNews('general')">General</button>
+    <button onclick="fetchNews('sports')">Sports</button>
+    <button onclick="fetchNews('politics')">Politics</button>
+    <button onclick="fetchNews('education')">Education</button>
+    <button onclick="fetchNews('crime')">Crime</button>
+    <button onclick="fetchNews('career')">Career</button>
+  </div>
+
+  <div id="news-container"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
